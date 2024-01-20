@@ -1,0 +1,59 @@
+.list_ve_container {
+    margin: 3px;
+    margin-right: 40px;
+    height: 96%;
+    max-height: 730px;
+    max-width: 590px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid var(--color-yellow);
+    box-shadow: 0px 2px 1px 1px var(--color-yellow);
+    background-image: url("../../public/backgroundRed.png");
+}
+
+.list_ve_container .button_close {
+    margin-right: 6px;
+    margin-top: 6px;
+    position:absolute;
+    right: 46%;
+    font-size: medium;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.list_ve_container .list_ve {
+    box-shadow: -1px 1px 5px 6px rgba(0, 0, 0, 0.3);
+    background-size: contain;
+    background-image: url("../../public/background.png");
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 78%;
+    max-height: 570px;
+    overflow-x: scroll;
+}
+
+.list_ve_color {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1024px) {
+
+    .list_ve_container {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .list_ve_container .button_close{
+        right:  0;
+        
+    }
+}
